@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch</title>
+</head>
+<body>
+    <div id = "output"></div>
+    <script>
+        var grade = "";
+
+        switch(grade){
+            case "A":
+            case "a":
+            document.getElementById('output').innerHTML = "Great Job!";
+            break;
+            case "B":
+            case "b":
+            document.getElementById('output').innerHTML = "Great Effort. You're almost there!";
+            break;
+            case "C":
+            case "c":
+            document.getElementById('output').innerHTML = "Passing Grade!";
+            break;
+            case "D":
+            case "d":
+            document.getElementById('output').innerHTML = "D is for Dumb";
+            break;
+            case "F":
+            case "f":
+            document.getElementById('output').innerHTML = "Fail!";
+            break;
+
+            default:
+                document.getElementById('output').innerHTML = "Unrecognized Grade!"
+        }
+    </script>
+    
+</body>
+</html>

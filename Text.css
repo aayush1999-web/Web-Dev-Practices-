@@ -1,0 +1,15 @@
+h1
+{
+    font-family: Helvetica;
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    font-variant: small-caps;
+    color: rgb(12,100,90);
+}
+p
+{
+    line-height: 2em;
+    text-align: justify;
+}

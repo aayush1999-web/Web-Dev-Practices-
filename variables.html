@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables</title>
+</head>
+<body>
+    <div id = "out"></div>
+    <script>
+        var age = 22; //Integers, positive
+        var status = -10; //Integers, negative
+
+        var gpa = 3.45; //Floating point number
+
+        var output = ""; // String
+
+        output += "Age: "+ age;
+        output += "<br/>";
+        output += "Status: " + status
+        output += "<br/>";
+        output += "GPA: " + gpa;
+
+        var fullName = "Aayush Kharel";
+
+        document.getElementById('out').innerHTML = fullName + "<br/>" + output;
+
+       // alert("Aayush is " + age + " years old");
+    </script>
+    
+</body>
+</html>

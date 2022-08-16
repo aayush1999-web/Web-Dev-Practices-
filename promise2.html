@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promise2</title>
+</head>
+<body>
+    <div id = "image-holder"></div>
+    <script>
+        //https://thecatapi.com/api/images/get?format=src&type=jpg&size=medium
+        var img = null;
+        let imgPromise = new 
+        Promise(function(resolve,reject){
+            img = new Image();
+            img.addEventListener('load', resolve(img));
+            img.addEventListener('error', reject('Could not load image'));
+            img.src = "https://thecatapi.com/api/images/get?format=src&type=jpg&size=medium";
+        });
+
+        imgPromise.then(function(fromResolve){
+            console.log("The image has loaded. Yay!");
+            let node = document.getElementById('image-holder');
+            node.appendChild(img);
+        }).catch(function(fromReject){
+            console.log(fromReject);
+        });
+    </script>
+    
+</body>
+</html>

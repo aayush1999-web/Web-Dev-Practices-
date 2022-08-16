@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object2</title>
+</head>
+<body>
+<script src = "model.js"></script>
+<script>
+    //Create object or instance
+    var myToyota = new Car("Sedan", "Toyota", "Corolla", 2021)
+    var myHonda = new Car("Sedan", "Honda", "Civic", 2020)
+    alert(myToyota.model);
+
+    myToyota.accelerate();
+    myToyota.accelerate();
+    myToyota.accelerate();
+    myToyota.accelerate();
+
+    alert(myHonda.model);
+    myHonda.accelerate();
+    alert(myHonda.make + " is going " + myHonda.speed + " MPH.");
+</script>
+
+    
+</body>
+</html>

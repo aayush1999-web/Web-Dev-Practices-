@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id = "output"></div>
+    <script>
+        let team = new Map();
+        team.set('pitcher', 'David Cone');
+        team.set('catcher', 'Jorge Posada');
+        team.set('right_field', 'Dave Winfield');
+
+        //alert(team.get('right_field'));
+
+        let music = new Map();
+        music.set('Journey', 'Faithfully')
+        .set('Reo Speedwagon', 'Keep on Rolling')
+        .set('Scandal', 'The Warrior');
+
+        //alert(music.get('Scandal'));
+
+        let family = new Map([
+            ['mother', 'Ambika'],
+            ['father', 'Yubraj'],
+            ['brother', 'Anees']
+        ]);
+
+
+       // family.clear();
+        for(let r of family.values())
+        {
+            alert(r);
+        }
+
+
+    </script>
+    
+</body>
+</html>

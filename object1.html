@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="output"></div>
+    <script>
+        var car = {};
+        //Properties
+        car.type = "Sedan";
+        car.make = "Toyota";
+        car.model = "Corolla";
+        car.year = 2022;
+        car.weight = 3000;
+
+        //Method
+        car.startCar = function()
+        {
+            alert("Car has Started");
+        }
+        car.stopCar = function()
+        {
+            alert("Car has Stopped")
+        }
+
+        var out = "Car Type: " + car.type;
+        out += "<br/> Car Make: " + car.make;
+        out += "<br/> Year: " + car.year;
+
+        car.startCar();
+        car.stopCar();
+
+        document.getElementById('output').innerHTML = out;
+    </script>
+    
+</body>
+</html>

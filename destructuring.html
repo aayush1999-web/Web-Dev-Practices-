@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id = "output"></div>
+    <script>
+        let person = {
+            first: "Aayush",
+            last: "Kharel",
+            age: 22,
+            city: "Baltimore",
+            state: "Maryland"
+        };
+
+        let { first, last, city, age, state } = person;
+        console.log(first);
+        console.log(last);
+        console.log(city);
+        console.log(age);
+        console.log(state);
+
+        let company = {
+            name: "Framework Television",
+            social: {
+                twitter: "https://twitter.com/fw_social",
+                facebook:"https://facebook.com/frameworktechnicallyspeaking"
+            }
+        }
+
+        let{twitter, facebook} = company.social;
+        console.log(twitter);
+        console.log(facebook);
+        
+    </script>
+</body>
+</html>
